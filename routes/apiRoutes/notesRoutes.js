@@ -1,24 +1,28 @@
-const router = require('express').Router();
-const { createNewNote, deleteNote } = require('./lib/notes');
-let { notesArray } = require('./db/notes');
+const router = require("express").Router();
+const {
+    notes
+} = require('../../db/db');
+const {
+    createNewNote,
+    deleteNote
+} = require('../../lib/notes');
+
 
 router.get('/notes', (req, res) => {
-  let results = notesArray;
-  res.json(results);
-});
+    let saved = notes;
+    res.json(saved);
+})
 
 router.post('/notes', (req, res) => {
-  if(notesArray){
-  req.body.id = notesArray.length.toString();
-  } else 
-  {req.body.id = 0}
-  res.json(createNewNote(req.body, notesArray));
-});
+    req.body.id = notes.length.toString();
+    let note = createNewNote(req.body, notes);
+    res.json(note);
+})
 
-router.delete('/notes/:id', async (req, res) => {
-  const { id } = req.params
-  notesArray = await deleteNote(id, notesArray);
-  res.json(notesArray);
-});
+router.delete('/notes/:id', (req, res) => {
+    deleteNote(notes, req.params.id);
+    res.json(notes);
+})
+
 
 module.exports = router;
