@@ -1,12 +1,1 @@
-[
-    {
-        "title": "Morning To-Do",
-        "text": "1. Take dog out\n2. Feed the dog",
-        "id": "cd136edc-3cf4-4af9-9531-a5fb2ffb9f15"
-    },
-    {
-        "title": "Homework",
-        "text": "Turn in homework!",
-        "id": "7e2c4183d-edb9-4850-8e70-926ff17be65f"
-    }
-]
+[{"title":"Morning To-Do","text":"1. Take dog out\n2. Feed the dog\n3. Pack lunch for work","id":"cd136edc-3cf4-4af9-9531-a5fb2ffb9f15"},{"title":"Homework","text":"1. Debug homework\n2. Turn in homework!","id":"7e2c4183d-edb9-4850-8e70-926ff17be65f"}]
