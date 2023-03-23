@@ -6,9 +6,10 @@ This week's challenge is to create an application called Note Taker that can be 
 
 [Link to deployed application on Heroku](https://stormy-ridge-77061.herokuapp.com/)
 
-Below is a preview of the application while in use. 
+Below is a preview of the application when viewing the deployed link. 
 
-![A preview of logo.](./images/preview.gif)
+![A preview of index.](./public/assets/images/previewIndex.png)
+![A preview of note.](./public/assets/images/previewNote.png)
 
 ## Credits
 
